@@ -9,7 +9,7 @@ export const renderFinalVideo = async (videoId: number): Promise<void> => {
   if (!video) throw new Error('Video not found');
 
   const input = path.resolve(video.path).replace(/\\/g, '/');
-  const output = path.resolve('uploads', `rendered-${Date.now()}.mp4`).replace(/\\/g, '/');
+  const output = path.join('uploads', `rendered-${Date.now()}.mp4`);
 
   return new Promise((resolve, reject) => {
     ffmpeg(input)

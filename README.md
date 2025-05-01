@@ -2,6 +2,12 @@
 
 This backend project enables users to upload, trim, add subtitles to, render, and download videos. Rendering is handled asynchronously using BullMQ and Redis. Built with Express, TypeScript, FFmpeg, Prisma, and PostgreSQL.
 
+### Video Demo:
+
+```
+https://drive.google.com/file/d/1Mluk0FvsIxkcW0AzfMVkwNWR9BYdWNh5/view?usp=sharing
+```
+
 ---
 
 ## Features
